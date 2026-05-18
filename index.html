@@ -773,6 +773,12 @@ nav {
 .ml-embedded .ml-form-embedBody .ml-form-embedContent > p { display: none !important; }
 /* Make wrapper transparent */
 .ml-embedded .ml-form-embedWrapper { background: transparent !important; border: none !important; box-shadow: none !important; }
+/* Fix success message text color */
+.ml-embedded .ml-form-successBody { background: transparent !important; }
+.ml-embedded .ml-form-successBody p,
+.ml-embedded .ml-form-successBody h4,
+.ml-embedded .ml-form-successContent,
+.ml-embedded .ml-form-successContent * { color: #f5efe4 !important; }
 
 /* ── FOOTER ── */
 footer {
@@ -2092,9 +2098,12 @@ function scrollToCapture() {
   setTimeout(() => {
     const capture = document.getElementById('capture');
     if (capture) {
-      capture.scrollIntoView({ behavior: 'smooth' });
+      // Use offset to account for fixed nav bar on mobile
+      const navHeight = 72;
+      const top = capture.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      window.scrollTo({ top: top, behavior: 'smooth' });
     }
-  }, 350);
+  }, 400);
 }
 
 // Nav scroll behavior
