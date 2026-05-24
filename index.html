@@ -2733,40 +2733,87 @@ function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
   document.getElementById('page-' + name).classList.add('active');
-  const navBtn = document.getElementById('nav-' + name);
+  var navBtn = document.getElementById('nav-' + name);
   if (navBtn) navBtn.classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // Auto-unlock Practice tab if cookie exists
+  if (name === 'practice') {
+    checkPracticeCookie();
+  }
+}
+
+// ── PRACTICE COOKIE HELPERS ──
+function setPracticeCookie(name) {
+  // Expires in 365 days
+  var d = new Date();
+  d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+  var expires = 'expires=' + d.toUTCString();
+  document.cookie = 'wps_practice_unlocked=1;' + expires + ';path=/;SameSite=Lax';
+  document.cookie = 'wps_practice_name=' + encodeURIComponent(name || '') + ';' + expires + ';path=/;SameSite=Lax';
+}
+
+function getPracticeCookie() {
+  var name = 'wps_practice_unlocked=';
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i].trim();
+    if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+  }
+  return '';
+}
+
+function getPracticeNameCookie() {
+  var name = 'wps_practice_name=';
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i].trim();
+    if (c.indexOf(name) === 0) return decodeURIComponent(c.substring(name.length, c.length));
+  }
+  return '';
+}
+
+function showPracticeContent(fname) {
+  document.getElementById('practice-gate').style.display = 'none';
+  var content = document.getElementById('practice-content');
+  content.classList.add('unlocked');
+  if (fname) {
+    document.getElementById('practice-welcome-name').textContent = 'Welcome back, ' + fname + '. Your practice sessions are below.';
+  }
+  setTimeout(function() {
+    var ep1 = document.getElementById('pep1');
+    if (ep1 && !ep1.classList.contains('open')) {
+      ep1.classList.add('open');
+    }
+  }, 200);
 }
 
 // Practice tab — unlock content after email
 function unlockPractice() {
-  const fname = document.getElementById('practice-fname').value.trim();
-  const email = document.getElementById('practice-email').value.trim();
+  var fname = document.getElementById('practice-fname').value.trim();
+  var email = document.getElementById('practice-email').value.trim();
 
   if (!email || !email.includes('@')) {
-    const emailInput = document.getElementById('practice-email');
+    var emailInput = document.getElementById('practice-email');
     emailInput.style.borderColor = '#c84b2f';
     emailInput.placeholder = 'Please enter a valid email';
     return;
   }
 
-  // Submit to MailerLite via embedded form (same group as main form)
-  // The ML form handles the actual subscription
-  // Here we just unlock the content immediately for a smooth UX
+  // Set cookie so they never see the gate again on this device
+  setPracticeCookie(fname);
 
-  // Hide gate, show content
+  // Show content immediately
+  var welcomeEl = document.getElementById('practice-welcome-name');
+  if (fname) {
+    welcomeEl.textContent = 'Welcome, ' + fname + '. Your practice sessions are below.';
+  }
   document.getElementById('practice-gate').style.display = 'none';
-  const content = document.getElementById('practice-content');
+  var content = document.getElementById('practice-content');
   content.classList.add('unlocked');
 
-  // Personalize welcome if name provided
-  if (fname) {
-    document.getElementById('practice-welcome-name').textContent = 'Welcome, ' + fname + '. Your practice sessions are below.';
-  }
-
-  // Open Episode 1 by default
-  setTimeout(() => {
-    const ep1 = document.getElementById('pep1');
+  // Open Episode 1 by default and scroll in
+  setTimeout(function() {
+    var ep1 = document.getElementById('pep1');
     if (ep1) {
       ep1.classList.add('open');
       ep1.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -2778,6 +2825,14 @@ function unlockPractice() {
     try {
       ml('account', '2356403');
     } catch(e) {}
+  }
+}
+
+// Auto-check cookie when Practice page is shown — skip gate if already unlocked
+function checkPracticeCookie() {
+  if (getPracticeCookie() === '1') {
+    var savedName = getPracticeNameCookie();
+    showPracticeContent(savedName);
   }
 }
 
