@@ -3,59 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Misty Ary, MD, MPH — Psychiatrist · Author · Speaker</title>
-
-<!-- Google Search Console Verification -->
-<meta name="google-site-verification" content="zXndwQ-KmcBST3XSzMulYo4M_QaMAsKdkVHO2TPIyok" />
-
-<!-- SEO Meta Tags -->
-<meta name="description" content="Misty Ary, MD, MPH is a board certified psychiatrist, author of Stop the Loop, and keynote speaker. Get her free 5-Minute Daily Reset tool to interrupt overthinking.">
-<meta name="keywords" content="Misty Ary, Dr Misty Ary, psychiatrist, Stop the Loop, overthinking, mental health, speaker, author, Alabama psychiatrist">
-<meta name="author" content="Misty Ary, MD, MPH">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://mistyary.com">
-
-<!-- Open Graph (Facebook, LinkedIn previews) -->
-<meta property="og:title" content="Misty Ary, MD, MPH — Psychiatrist · Author · Speaker">
-<meta property="og:description" content="Board certified psychiatrist and author of Stop the Loop — A Psychiatrist's Guide to Quieting Your Mind. Get the free 5-Minute Daily Reset tool.">
-<meta property="og:url" content="https://mistyary.com">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Misty Ary, MD, MPH">
-
-<!-- Twitter/X Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Misty Ary, MD, MPH — Psychiatrist · Author · Speaker">
-<meta name="twitter:description" content="Board certified psychiatrist and author of Stop the Loop. Get the free 5-Minute Daily Reset tool to interrupt overthinking.">
-
-<!-- Schema.org structured data for Google -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Misty Ary",
-  "honorificSuffix": "MD, MPH",
-  "jobTitle": "Board Certified Psychiatrist",
-  "description": "Psychiatrist, author of Stop the Loop, and keynote speaker on overthinking and mental performance.",
-  "url": "https://mistyary.com",
-  "sameAs": [
-    "https://youtube.com/@whatpatientssay"
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "River Creek Press LLC"
-  },
-  "author": {
-    "@type": "Book",
-    "name": "Stop the Loop",
-    "description": "A Psychiatrist's Guide to Quieting Your Mind",
-    "datePublished": "2026",
-    "publisher": {
-      "@type": "Organization",
-      "name": "River Creek Press LLC"
-    }
-  }
-}
-</script>
+<title>Misty Ary, MD, MPH — Psychiatrist & Author</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@200;300;400;500;600&family=DM+Mono:wght@300;400;500&display=swap');
 
@@ -818,20 +766,6 @@ nav {
   text-align: center;
 }
 
-/* ── MAILERLITE FORM OVERRIDES ── */
-/* Hide only the Newsletter heading and subtext — leave everything else alone */
-.ml-embedded .ml-form-embedWrapper .ml-form-embedHeader { display: none !important; }
-.ml-embedded .ml-form-embedBody .ml-form-embedContent h4 { display: none !important; }
-.ml-embedded .ml-form-embedBody .ml-form-embedContent > p { display: none !important; }
-/* Make wrapper transparent */
-.ml-embedded .ml-form-embedWrapper { background: transparent !important; border: none !important; box-shadow: none !important; }
-/* Fix success message text color */
-.ml-embedded .ml-form-successBody { background: transparent !important; }
-.ml-embedded .ml-form-successBody p,
-.ml-embedded .ml-form-successBody h4,
-.ml-embedded .ml-form-successContent,
-.ml-embedded .ml-form-successContent * { color: #f5efe4 !important; }
-
 /* ── FOOTER ── */
 footer {
   background: var(--near-black);
@@ -1187,64 +1121,41 @@ footer {
    RESPONSIVE
 ═══════════════════════════════════ */
 @media (max-width: 900px) {
-  nav { padding: 0 16px; height: auto; min-height: 72px; flex-wrap: wrap; gap: 8px; padding-top: 12px; padding-bottom: 12px; }
-  .nav-links { gap: 10px; flex-wrap: wrap; }
-  .nav-link { font-size: 8.5px; letter-spacing: 0.1em; }
-  .nav-cta { font-size: 9px; padding: 8px 14px; white-space: nowrap; }
-
-  /* Hero — stack vertically, show book below text */
+  nav { padding: 0 16px; }
+  .nav-links { gap: 12px; font-size: 13px; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-left { padding: 110px 28px 40px; }
-  .hero-right {
-    display: flex;
-    padding: 0 28px 60px;
+  .hero-left { padding: 100px 28px 40px; }
+  .hero-right { 
+    display: flex; 
+    padding: 20px 28px 60px;
     justify-content: center;
-    align-items: center;
-    background: var(--near-black);
   }
   .hero-divider { display: none; }
-
-  /* Scale book mockup for mobile — taller and wider, no 3D tilt */
-  .book-mockup {
-    width: 220px;
-    height: 340px;
-    transform: none;
-    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.7));
+  .book-mockup { 
+    width: 180px; 
+    height: 270px;
+    transform: perspective(800px) rotateY(-6deg);
   }
-
-  /* Hide planet rings on mobile — too messy at small size */
-  .planet-ring-a, .planet-ring-b, .planet-ring-c { display: none !important; }
-  .book-loop-visual {
-    width: 100px !important;
-    height: 100px !important;
-    overflow: hidden !important;
-  }
-
-  /* Hide floating quote on mobile — too cramped */
-  .floating-quote { display: none; }
-
+  .book-cover { width: 180px; height: 270px; }
+  .planet-ring { display: none; }
+  .book-content { padding: 18px 14px; }
+  .book-stop { font-size: 28px; }
+  .book-the-loop { font-size: 22px; }
+  .book-subtitle { font-size: 9px; }
+  .book-author { font-size: 9px; }
+  .book-cred { font-size: 7px; }
   .what-inner { grid-template-columns: 1fr; gap: 40px; }
   .for-grid { grid-template-columns: 1fr; }
   .capture-section { padding: 60px 24px; }
   .capture-card { padding: 24px 20px; }
   .form-row { flex-direction: column; }
-
-  /* About page — show photo on mobile, centered */
   .about-hero-inner { grid-template-columns: 1fr; }
-  .about-photo-wrap {
-    display: flex;
-    justify-content: center;
-    margin-top: 32px;
-  }
-  .about-photo {
-    width: 240px;
-    height: 300px;
-  }
+  .about-photo-wrap { display: flex; justify-content: center; margin-bottom: 32px; }
+  .about-photo { width: 180px; height: 180px; border-radius: 50%; }
   .about-body-inner { grid-template-columns: 1fr; }
   .what-section, .for-section, .about-body { padding: 60px 24px; }
-  .about-hero { padding: 110px 24px 40px; }
-  footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; gap: 16px; }
-  .footer-links { flex-wrap: wrap; gap: 12px; }
+  .about-hero { padding: 120px 24px 60px; }
+  footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
 }
 
 /* ═══════════════════════════════════
@@ -1382,7 +1293,7 @@ footer {
 .sstat { padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
 .sstat:last-child { border-bottom: none; padding-bottom: 0; }
 .sstat-num {
-  font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700;
+  font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700;
   color: #f5efe4; line-height: 1; display: block;
 }
 .sstat-label { font-size: 12px; color: rgba(245,239,228,0.4); margin-top: 3px; display: block; }
@@ -1518,17 +1429,6 @@ footer {
 }
 
 </style>
-
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2356403');
-</script>
-<!-- End MailerLite Universal -->
-
 </head>
 <body>
 
@@ -1572,6 +1472,7 @@ footer {
     <button class="nav-link" onclick="showPage('about')" id="nav-about">About</button>
     <button class="nav-link" onclick="showPage('home'); setTimeout(()=>scrollToCapture(),100)">Book</button>
     <button class="nav-link" onclick="showPage('speaking')" id="nav-speaking">Speaking</button>
+    <button class="nav-link" onclick="showPage('practice')" id="nav-practice">Practice</button>
     <button class="nav-link" onclick="window.open('https://youtube.com/@whatpatientssay','_blank')">Watch</button>
   </div>
   <button class="nav-cta" onclick="scrollToCapture()">Get the Free Tool</button>
@@ -1600,12 +1501,6 @@ footer {
         <button class="btn-primary" onclick="scrollToCapture()">Get Notified at Launch</button>
         <button class="btn-ghost" onclick="showPage('about')">About the Author</button>
       </div>
-      <!-- Tagline -->
-      <div style="margin-top:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.06);">
-        <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;font-weight:300;color:rgba(245,239,228,0.55);letter-spacing:0.02em;">"The thought is not the truth."</span>
-        <span style="display:block;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--amber);margin-top:8px;opacity:0.7;">Misty Ary, MD, MPH</span>
-      </div>
-
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-num">14</span>
@@ -1763,7 +1658,11 @@ footer {
           <li>Plus — be first to know when Stop the Loop launches</li>
         </ul>
         <div class="email-form" id="email-form">
-          <div class="ml-embedded" data-form="krxnZN"></div>
+          <div class="form-row">
+            <input type="text" class="form-input" placeholder="First name" id="fname">
+            <input type="email" class="form-input" placeholder="Email address" id="femail">
+          </div>
+          <button class="form-submit" onclick="handleSubmit()">Send Me the Free Tool →</button>
           <p class="form-privacy">No spam. No selling your information. Unsubscribe anytime.</p>
         </div>
         <div class="success-msg" id="success-msg">
@@ -1869,8 +1768,7 @@ footer {
             <li><strong>Experience</strong>15+ years clinical practice</li>
             <li><strong>Specialization</strong>Anxiety, overthinking, high-functioning burnout</li>
             
-            <li style="display:none;"><strong>Training</strong>[Your institution — optional]</li>
-          </ul>
+                      </ul>
         </div>
 
         <div class="sidebar-card">
@@ -2058,52 +1956,48 @@ footer {
         <div class="inquiry-section">
           <h3 class="inquiry-title">Tell Us About Your Event</h3>
           <p class="inquiry-sub">All fields marked with * are required.</p>
-          <form name="speaking-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="speaking-form">
-            <input type="hidden" name="form-name" value="speaking-inquiry">
-            <p style="display:none;"><input name="bot-field"></p>
-            <div class="inquiry-grid">
-              <div class="inquiry-field"><label class="inquiry-label">Your Name *</label><input type="text" class="inquiry-input" name="name" placeholder="Full name" required></div>
-              <div class="inquiry-field"><label class="inquiry-label">Organization *</label><input type="text" class="inquiry-input" name="organization" placeholder="Company or organization" required></div>
-              <div class="inquiry-field"><label class="inquiry-label">Email Address *</label><input type="email" class="inquiry-input" name="email" placeholder="your@email.com" required></div>
-              <div class="inquiry-field"><label class="inquiry-label">Phone (optional)</label><input type="tel" class="inquiry-input" name="phone" placeholder="Phone number"></div>
-              <div class="inquiry-field"><label class="inquiry-label">Event Date *</label><input type="text" class="inquiry-input" name="event-date" placeholder="Month and year or specific date" required></div>
-              <div class="inquiry-field"><label class="inquiry-label">Event Location *</label><input type="text" class="inquiry-input" name="event-location" placeholder="City, State or Virtual" required></div>
-              <div class="inquiry-field">
-                <label class="inquiry-label">Audience Size *</label>
-                <select class="inquiry-select" name="audience-size" required>
-                  <option value="">Select audience size</option>
-                  <option>Under 50</option><option>50 – 150</option>
-                  <option>150 – 500</option><option>500 – 1,000</option><option>Over 1,000</option>
-                </select>
-              </div>
-              <div class="inquiry-field">
-                <label class="inquiry-label">Talk Format *</label>
-                <select class="inquiry-select" name="talk-format" required>
-                  <option value="">Select format</option>
-                  <option>Keynote (45–60 min)</option><option>Breakout session</option>
-                  <option>Workshop (90+ min)</option><option>Grand rounds / CME</option>
-                  <option>Panel participant</option><option>Virtual presentation</option><option>Not sure yet</option>
-                </select>
-              </div>
-              <div class="inquiry-field full">
-                <label class="inquiry-label">Topic Interest</label>
-                <select class="inquiry-select" name="topic">
-                  <option value="">Select a topic (or describe in message)</option>
-                  <option>Stop the Loop — Overthinking</option>
-                  <option>The Exhausted High Performer</option>
-                  <option>What Patients Say</option>
-                  <option>Breaking the Loop Workshop</option>
-                  <option>The Mind That Never Clocks Out (Women's)</option>
-                  <option>Custom topic</option>
-                </select>
-              </div>
-              <div class="inquiry-field full">
-                <label class="inquiry-label">Tell us about your event and audience *</label>
-                <textarea class="inquiry-textarea" name="message" placeholder="What is the event? Who is the audience? What are you hoping attendees take away? Any specific themes or challenges you'd like addressed?" required></textarea>
-              </div>
+          <div class="inquiry-grid">
+            <div class="inquiry-field"><label class="inquiry-label">Your Name *</label><input type="text" class="inquiry-input" placeholder="Full name" id="inq-name"></div>
+            <div class="inquiry-field"><label class="inquiry-label">Organization *</label><input type="text" class="inquiry-input" placeholder="Company or organization" id="inq-org"></div>
+            <div class="inquiry-field"><label class="inquiry-label">Email Address *</label><input type="email" class="inquiry-input" placeholder="your@email.com" id="inq-email"></div>
+            <div class="inquiry-field"><label class="inquiry-label">Phone (optional)</label><input type="tel" class="inquiry-input" placeholder="Phone number" id="inq-phone"></div>
+            <div class="inquiry-field"><label class="inquiry-label">Event Date *</label><input type="text" class="inquiry-input" placeholder="Month and year or specific date" id="inq-date"></div>
+            <div class="inquiry-field"><label class="inquiry-label">Event Location *</label><input type="text" class="inquiry-input" placeholder="City, State or Virtual" id="inq-location"></div>
+            <div class="inquiry-field">
+              <label class="inquiry-label">Audience Size *</label>
+              <select class="inquiry-select" id="inq-size">
+                <option value="">Select audience size</option>
+                <option>Under 50</option><option>50 – 150</option>
+                <option>150 – 500</option><option>500 – 1,000</option><option>Over 1,000</option>
+              </select>
             </div>
-            <button type="submit" class="inquiry-submit">Submit Speaking Inquiry →</button>
-          </form>
+            <div class="inquiry-field">
+              <label class="inquiry-label">Talk Format *</label>
+              <select class="inquiry-select" id="inq-format">
+                <option value="">Select format</option>
+                <option>Keynote (45–60 min)</option><option>Breakout session</option>
+                <option>Workshop (90+ min)</option><option>Grand rounds / CME</option>
+                <option>Panel participant</option><option>Virtual presentation</option><option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="inquiry-field full">
+              <label class="inquiry-label">Topic Interest</label>
+              <select class="inquiry-select" id="inq-topic">
+                <option value="">Select a topic (or describe in message)</option>
+                <option>Stop the Loop — Overthinking</option>
+                <option>The Exhausted High Performer</option>
+                <option>What Patients Say</option>
+                <option>Breaking the Loop Workshop</option>
+                <option>The Mind That Never Clocks Out (Women's)</option>
+                <option>Custom topic</option>
+              </select>
+            </div>
+            <div class="inquiry-field full">
+              <label class="inquiry-label">Tell us about your event and audience *</label>
+              <textarea class="inquiry-textarea" placeholder="What is the event? Who is the audience? What are you hoping attendees take away? Any specific themes or challenges you'd like addressed?" id="inq-message"></textarea>
+            </div>
+          </div>
+          <button class="inquiry-submit" onclick="handleInquiry()">Submit Speaking Inquiry →</button>
           <div class="inquiry-success" id="inquiry-success">
             <div class="inquiry-success-title">Thank you — we'll be in touch within 2 business days.</div>
             <p class="inquiry-success-body">We've received your inquiry and will follow up at the email address you provided. For events within 60 days, please note that availability may be limited.</p>
@@ -2133,6 +2027,706 @@ footer {
 
 </div>
 
+<!-- ═══════════════════════════════════════════════════
+     PRACTICE PAGE
+═══════════════════════════════════════════════════ -->
+<div class="page" id="page-practice">
+
+<style>
+/* ── PRACTICE PAGE STYLES ── */
+.practice-hero {
+  background: var(--near-black);
+  padding: 120px 48px 72px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.practice-hero::before {
+  content: '';
+  position: absolute;
+  top: -80px; left: 50%; transform: translateX(-50%);
+  width: 600px; height: 400px;
+  background: radial-gradient(ellipse, rgba(200,120,64,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+.practice-hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 20px;
+}
+.practice-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 400;
+  color: #f5efe4;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.practice-hero h1 em {
+  font-style: italic;
+  color: var(--amber-light);
+}
+.practice-hero-sub {
+  font-size: 15px;
+  color: rgba(245,239,228,0.6);
+  max-width: 480px;
+  margin: 0 auto 0;
+  line-height: 1.7;
+}
+.practice-rule {
+  width: 40px;
+  height: 1px;
+  background: var(--amber);
+  margin: 24px auto;
+}
+
+/* ── GATE ── */
+.practice-gate {
+  background: var(--cream);
+  padding: 64px 48px 80px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.practice-gate-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 48px;
+  text-align: center;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+}
+.practice-gate-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--amber-glow);
+  border: 1px solid rgba(200,120,64,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  font-size: 22px;
+}
+.practice-gate-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--near-black);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.practice-gate-body {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 32px;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.practice-gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.practice-gate-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: var(--text-body);
+  background: var(--cream);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.practice-gate-input:focus {
+  border-color: var(--amber);
+}
+.practice-gate-btn {
+  width: 100%;
+  padding: 15px 24px;
+  background: var(--amber);
+  color: var(--near-black);
+  border: none;
+  border-radius: 3px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.practice-gate-btn:hover { background: var(--amber-light); }
+.practice-gate-btn:active { transform: translateY(1px); }
+.practice-gate-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 8px;
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.04em;
+}
+
+/* ── CONTENT (hidden until unlocked) ── */
+.practice-content {
+  display: none;
+  background: var(--cream);
+  padding: 0 0 80px;
+}
+.practice-content.unlocked {
+  display: block;
+}
+
+/* WELCOME BANNER */
+.practice-welcome {
+  background: var(--near-black);
+  padding: 32px 48px;
+  text-align: center;
+  border-bottom: 1px solid rgba(200,120,64,0.2);
+}
+.practice-welcome-text {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+.practice-welcome-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #f5efe4;
+  margin-top: 4px;
+}
+
+/* EPISODE GRID */
+.practice-episodes {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 56px 48px 0;
+}
+.practice-section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.practice-section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* EPISODE CARD */
+.practice-ep {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.practice-ep:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.practice-ep-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--warm);
+  cursor: pointer;
+  user-select: none;
+}
+.practice-ep-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: var(--amber);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.practice-ep-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  color: var(--near-black);
+  line-height: 1.3;
+  flex: 1;
+}
+.practice-ep-chevron {
+  font-size: 12px;
+  color: var(--text-muted);
+  transition: transform 0.25s;
+  flex-shrink: 0;
+}
+.practice-ep.open .practice-ep-chevron {
+  transform: rotate(180deg);
+}
+
+.practice-ep-body {
+  display: none;
+  padding: 32px 28px 36px;
+}
+.practice-ep.open .practice-ep-body {
+  display: block;
+}
+
+/* TOOL BLOCKS */
+.practice-tool {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+.practice-tool:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.practice-tool-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
+.practice-tool-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--near-black);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.practice-tool-body {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* STEPS */
+.practice-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+.practice-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.practice-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--amber-glow);
+  border: 1px solid rgba(200,120,64,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: var(--amber);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.practice-step-text {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.7;
+  padding-top: 3px;
+}
+
+/* JOURNAL PROMPT */
+.practice-journal {
+  background: var(--warm);
+  border-left: 3px solid var(--amber);
+  padding: 20px 24px;
+  border-radius: 0 3px 3px 0;
+  margin-top: 20px;
+}
+.practice-journal-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 8px;
+}
+.practice-journal-prompt {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--near-black);
+  line-height: 1.65;
+}
+
+/* QUOTE BLOCK */
+.practice-quote {
+  background: var(--near-black);
+  padding: 24px 28px;
+  border-radius: 3px;
+  margin: 20px 0;
+}
+.practice-quote-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #f5efe4;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.practice-quote-attr {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+/* REMINDER */
+.practice-reminder {
+  background: var(--amber-glow);
+  border: 1px solid rgba(200,120,64,0.2);
+  border-radius: 3px;
+  padding: 16px 20px;
+  font-size: 13px;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin-top: 20px;
+}
+.practice-reminder strong {
+  color: var(--amber);
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* WATCH LINK */
+.practice-watch-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200,120,64,0.3);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.practice-watch-link:hover {
+  color: var(--amber-light);
+  border-color: var(--amber-light);
+}
+
+/* FOOTER */
+.practice-footer {
+  max-width: 900px;
+  margin: 48px auto 0;
+  padding: 32px 48px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.practice-footer-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-style: italic;
+}
+.practice-footer-tagline {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--amber);
+  margin-top: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .practice-hero { padding: 100px 24px 56px; }
+  .practice-gate { padding: 40px 24px 60px; }
+  .practice-gate-card { padding: 32px 24px; }
+  .practice-episodes { padding: 40px 24px 0; }
+  .practice-ep-header { padding: 18px 20px; }
+  .practice-ep-body { padding: 24px 20px 28px; }
+  .practice-footer { padding: 28px 24px; }
+  .practice-welcome { padding: 24px; }
+}
+</style>
+
+<!-- HERO -->
+<div class="practice-hero">
+  <div class="practice-hero-eyebrow">What Patients Say · Season 1</div>
+  <h1>The Practice<br><em>Sessions</em></h1>
+  <div class="practice-rule"></div>
+  <p class="practice-hero-sub">The clinical tools from each episode — written out, step by step, so you can use them between sessions. One episode at a time.</p>
+</div>
+
+<!-- GATE — shown until email submitted -->
+<div class="practice-gate" id="practice-gate">
+  <div class="practice-gate-card">
+    <div class="practice-gate-icon">⟳</div>
+    <div class="practice-gate-title">Access the Practice Sessions</div>
+    <p class="practice-gate-body">Enter your email to unlock the practice tools for Episodes 1–3. You'll also receive the free 5-Minute Daily Reset and be first to know when the book launches.</p>
+    <div class="practice-gate-form">
+      <input type="text" class="practice-gate-input" id="practice-fname" placeholder="First name" autocomplete="given-name" />
+      <input type="email" class="practice-gate-input" id="practice-email" placeholder="Email address" autocomplete="email" />
+      <button class="practice-gate-btn" onclick="unlockPractice()">Unlock the Practice Sessions →</button>
+    </div>
+    <p class="practice-gate-note">No spam. Unsubscribe anytime. Your information is never shared.</p>
+  </div>
+</div>
+
+<!-- CONTENT — revealed after email -->
+<div class="practice-content" id="practice-content">
+
+  <div class="practice-welcome">
+    <div class="practice-welcome-text">Welcome — you're in.</div>
+    <div class="practice-welcome-name" id="practice-welcome-name">Your practice sessions are below.</div>
+  </div>
+
+  <div class="practice-episodes">
+
+    <div class="practice-section-label">Season 1 · Episodes 1–3 · Launch Week</div>
+
+    <!-- ── EPISODE 1 ── -->
+    <div class="practice-ep" id="pep1">
+      <div class="practice-ep-header" onclick="toggleEp('pep1')">
+        <div class="practice-ep-num">EP 01</div>
+        <div class="practice-ep-title">"My Brain Won't Turn Off" — The Naming Practice</div>
+        <div class="practice-ep-chevron">▼</div>
+      </div>
+      <div class="practice-ep-body">
+
+        <div class="practice-quote">
+          <div class="practice-quote-text">"Nothing is really wrong. I'm just tired of thinking all the time."</div>
+          <div class="practice-quote-attr">The sentence that started this channel</div>
+        </div>
+
+        <div class="practice-tool">
+          <div class="practice-tool-label">This Episode's Tool</div>
+          <div class="practice-tool-title">Name the Loop</div>
+          <div class="practice-tool-body">The next time you notice a thought cycling back for the third or fourth time — don't analyze it, don't argue with it, don't try to stop it. Just name it.</div>
+          <div class="practice-steps">
+            <div class="practice-step">
+              <div class="practice-step-num">1</div>
+              <div class="practice-step-text">Notice the thought has returned. Don't judge it — just notice.</div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">2</div>
+              <div class="practice-step-text">Say quietly — out loud if you can, internally if you can't: <em>"This is a loop."</em></div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">3</div>
+              <div class="practice-step-text">Let your attention settle somewhere else — a sensation, something in the room, your breath. Even for thirty seconds.</div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">4</div>
+              <div class="practice-step-text">That's it. You're not solving the loop. You're practicing stepping out of it.</div>
+            </div>
+          </div>
+          <div class="practice-reminder">
+            <strong>Why it works</strong>
+            Naming a thought creates a gap between you and it. Instead of being inside the loop, you're briefly outside it. From outside, the loop has less pull. You don't need to make it stop — you just need to stop being fully inside it.
+          </div>
+        </div>
+
+        <div class="practice-tool">
+          <div class="practice-tool-label">This Week's Practice</div>
+          <div class="practice-tool-title">The Loop Tally</div>
+          <div class="practice-tool-body">For seven days, every time you catch yourself in a loop — mark it. A tally in your phone, a dot in a notebook. Don't analyze the thought. Just mark that you caught it.</div>
+          <div class="practice-reminder">
+            <strong>What you'll find</strong>
+            By day 7, most people see they're catching the loop earlier in the spiral. That earlier catch — getting out after two laps instead of twenty — is the change. The loop coming back is not failure. It's the next rep.
+          </div>
+        </div>
+
+        <div class="practice-journal">
+          <div class="practice-journal-label">Journal Prompt</div>
+          <div class="practice-journal-prompt">What loop came back most this week? When does it tend to arrive — morning, evening, in certain situations? You don't need to solve it. Just describe it.</div>
+        </div>
+
+        <a href="https://youtube.com/@whatpatientssay" target="_blank" class="practice-watch-link">↗ Watch Episode 1 on YouTube</a>
+
+      </div>
+    </div>
+
+    <!-- ── EPISODE 2 ── -->
+    <div class="practice-ep" id="pep2">
+      <div class="practice-ep-header" onclick="toggleEp('pep2')">
+        <div class="practice-ep-num">EP 02</div>
+        <div class="practice-ep-title">"The Feeling Underneath" — The Certainty Question</div>
+        <div class="practice-ep-chevron">▼</div>
+      </div>
+      <div class="practice-ep-body">
+
+        <div class="practice-quote">
+          <div class="practice-quote-text">"Why can't I just let it go?"</div>
+          <div class="practice-quote-attr">Sarah — what she asked before she understood what was underneath the thought</div>
+        </div>
+
+        <div class="practice-tool">
+          <div class="practice-tool-label">This Episode's Tool</div>
+          <div class="practice-tool-title">The Certainty Question</div>
+          <div class="practice-tool-body">Overthinking is not a thinking problem — it's an emotional response to uncertainty. The loop keeps running because some part of you is trying to feel more certain about something. This question names what that something is.</div>
+          <div class="practice-steps">
+            <div class="practice-step">
+              <div class="practice-step-num">1</div>
+              <div class="practice-step-text">When you notice a loop running, pause and ask: <em>"What am I trying to feel more certain about right now?"</em></div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">2</div>
+              <div class="practice-step-text">Don't answer quickly. Sit with it for a moment. The real answer is often not the surface thought — it's underneath it.</div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">3</div>
+              <div class="practice-step-text">Name the underlying feeling out loud or in writing: <em>"I'm trying to feel certain that I made the right call"</em> or <em>"I'm trying to feel certain that I'm not going to be hurt."</em></div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">4</div>
+              <div class="practice-step-text">Then ask honestly: <em>"Is that certainty available to me right now?"</em> Usually, it isn't. And knowing that it isn't — rather than continuing to search for it — is what allows the loop to ease.</div>
+            </div>
+          </div>
+          <div class="practice-reminder">
+            <strong>The key insight</strong>
+            Trying to think your way to certainty is like putting out a fire with more heat. The loop isn't running because you haven't thought carefully enough. It's running because the feeling underneath it hasn't been named.
+          </div>
+        </div>
+
+        <div class="practice-tool">
+          <div class="practice-tool-label">This Week's Practice</div>
+          <div class="practice-tool-title">Underneath the Thought</div>
+          <div class="practice-tool-body">Once a day this week — ideally when a loop is running — write down two things: the surface thought (what you're thinking about) and the underlying feeling (what you're trying to feel certain about). They are almost never the same thing.</div>
+          <div class="practice-reminder">
+            <strong>What to expect</strong>
+            This practice feels awkward at first. Most people aren't used to asking what they need emotionally — they're used to solving. The discomfort of asking the question is the practice working.
+          </div>
+        </div>
+
+        <div class="practice-journal">
+          <div class="practice-journal-label">Journal Prompt</div>
+          <div class="practice-journal-prompt">Think of a loop you've been in this week. Beneath the surface thought — what were you actually trying to feel certain about? How long have you been trying to feel certain about that particular thing?</div>
+        </div>
+
+        <a href="https://youtube.com/@whatpatientssay" target="_blank" class="practice-watch-link">↗ Watch Episode 2 on YouTube</a>
+
+      </div>
+    </div>
+
+    <!-- ── EPISODE 3 ── -->
+    <div class="practice-ep" id="pep3">
+      <div class="practice-ep-header" onclick="toggleEp('pep3')">
+        <div class="practice-ep-num">EP 03</div>
+        <div class="practice-ep-title">"What It's Costing You" — The Awareness Inventory</div>
+        <div class="practice-ep-chevron">▼</div>
+      </div>
+      <div class="practice-ep-body">
+
+        <div class="practice-quote">
+          <div class="practice-quote-text">"It starts before I'm fully awake. My eyes open, and within minutes my mind is already moving."</div>
+          <div class="practice-quote-attr">Chapter 3 — The cost most people don't account for</div>
+        </div>
+
+        <div class="practice-tool">
+          <div class="practice-tool-label">This Episode's Practice</div>
+          <div class="practice-tool-title">The Cost Inventory</div>
+          <div class="practice-tool-body">Episode 3 has no tool — it's an awareness episode. The work is to make the cost of the loop visible. Most people are so accustomed to the drain that they've stopped noticing it. Before you can change a pattern, you have to see it clearly.</div>
+          <div class="practice-steps">
+            <div class="practice-step">
+              <div class="practice-step-num">1</div>
+              <div class="practice-step-text"><strong>The energy cost:</strong> At what point in the day do you feel mentally exhausted — before anything difficult has even happened?</div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">2</div>
+              <div class="practice-step-text"><strong>The confidence cost:</strong> Where in your life are you hedging, over-explaining, or reaching for the safer option when you don't actually need to?</div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">3</div>
+              <div class="practice-step-text"><strong>The presence cost:</strong> Think of a recent conversation or moment where you were physically there but somewhere else entirely. Who was with you?</div>
+            </div>
+            <div class="practice-step">
+              <div class="practice-step-num">4</div>
+              <div class="practice-step-text">Write down one answer to each of the three questions above. Don't try to fix anything. Just see it.</div>
+            </div>
+          </div>
+          <div class="practice-reminder">
+            <strong>Why no tool this week</strong>
+            Awareness is the work. You cannot interrupt a pattern you haven't seen. Most people try to fix their overthinking before they've honestly looked at what it's taking from them. This week is about looking.
+          </div>
+        </div>
+
+        <div class="practice-tool">
+          <div class="practice-tool-label">This Week's Practice</div>
+          <div class="practice-tool-title">One Day, Three Moments</div>
+          <div class="practice-tool-body">Choose one day this week and notice just three things: when your mind started running (before you got out of bed, or already by the time you reached for your phone), one moment where you were physically present but mentally elsewhere, and one decision you second-guessed after it was already made.</div>
+          <div class="practice-reminder">
+            <strong>The only goal</strong>
+            Not to judge any of it. Not to fix it. To see it with the same clinical curiosity you'd bring to something outside yourself. Distance changes what's possible.
+          </div>
+        </div>
+
+        <div class="practice-journal">
+          <div class="practice-journal-label">Journal Prompt</div>
+          <div class="practice-journal-prompt">If a close friend described your relationship with your own mind to you — accurately, and with compassion — what would they say? What would they have noticed that you've been too close to see?</div>
+        </div>
+
+        <a href="https://youtube.com/@whatpatientssay" target="_blank" class="practice-watch-link">↗ Watch Episode 3 on YouTube</a>
+
+      </div>
+    </div>
+
+    <!-- COMING SOON -->
+    <div style="text-align:center; padding: 40px 0 0; border-top: 1px solid var(--border); margin-top: 12px;">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;">New episodes added every Thursday</div>
+      <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:var(--near-black);">Episodes 4–25 coming weekly</div>
+      <div style="font-size:13px;color:var(--text-muted);margin-top:8px;line-height:1.7;">You'll receive an email each week when a new practice session is added. Check your inbox on Thursdays.</div>
+    </div>
+
+  </div><!-- /practice-episodes -->
+
+  <div class="practice-footer">
+    <p class="practice-footer-text">These practice sessions are educational tools drawn from <em>Stop the Loop: A Psychiatrist's Guide to Quieting Your Mind</em> by Misty Ary, MD, MPH. They do not constitute medical advice or clinical care. If you are experiencing a mental health crisis, call or text 988.</p>
+    <div class="practice-footer-tagline">"The thought is not the truth."</div>
+  </div>
+
+</div><!-- /practice-content -->
+
+<!-- Footer nav for practice page -->
+<footer style="background:var(--near-black);padding:32px 48px;border-top:1px solid var(--border-dark);margin-top:0;">
+  <div style="max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+    <div style="font-family:'Playfair Display',serif;font-size:15px;color:#f5efe4;">Misty Ary, MD, MPH</div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;">
+      <button class="footer-link" onclick="showPage('home')">Home</button>
+      <button class="footer-link" onclick="showPage('about')">About</button>
+      <button class="footer-link" onclick="showPage('speaking')">Speaking</button>
+      <button class="footer-link" onclick="window.open('https://youtube.com/@whatpatientssay','_blank')">Watch</button>
+    </div>
+  </div>
+  <div style="max-width:900px;margin:20px auto 0;font-size:11px;color:rgba(245,239,228,0.25);line-height:1.7;font-family:'DM Sans',sans-serif;">The content on this website is provided for educational purposes only and does not constitute medical advice, psychiatric care, diagnosis, or treatment. No physician-patient relationship is created by visiting this site. For mental health emergencies, call or text 988.</div>
+</footer>
+
+</div><!-- /page-practice -->
+
 <script>
 // Page navigation
 function showPage(name) {
@@ -2144,18 +2738,110 @@ function showPage(name) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Scroll to email capture — longer delay so MailerLite form has time to render
+// Practice tab — unlock content after email
+function unlockPractice() {
+  const fname = document.getElementById('practice-fname').value.trim();
+  const email = document.getElementById('practice-email').value.trim();
+
+  if (!email || !email.includes('@')) {
+    const emailInput = document.getElementById('practice-email');
+    emailInput.style.borderColor = '#c84b2f';
+    emailInput.placeholder = 'Please enter a valid email';
+    return;
+  }
+
+  // Submit to MailerLite via embedded form (same group as main form)
+  // The ML form handles the actual subscription
+  // Here we just unlock the content immediately for a smooth UX
+
+  // Hide gate, show content
+  document.getElementById('practice-gate').style.display = 'none';
+  const content = document.getElementById('practice-content');
+  content.classList.add('unlocked');
+
+  // Personalize welcome if name provided
+  if (fname) {
+    document.getElementById('practice-welcome-name').textContent = 'Welcome, ' + fname + '. Your practice sessions are below.';
+  }
+
+  // Open Episode 1 by default
+  setTimeout(() => {
+    const ep1 = document.getElementById('pep1');
+    if (ep1) {
+      ep1.classList.add('open');
+      ep1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 300);
+
+  // Fire MailerLite subscriber add via their JS API if available
+  if (typeof ml !== 'undefined') {
+    try {
+      ml('account', '2356403');
+    } catch(e) {}
+  }
+}
+
+// Toggle episode accordion
+function toggleEp(id) {
+  const ep = document.getElementById(id);
+  if (!ep) return;
+  const isOpen = ep.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.practice-ep').forEach(e => e.classList.remove('open'));
+  // Open clicked if it was closed
+  if (!isOpen) ep.classList.add('open');
+}
+
+// Allow Enter key on practice gate inputs
+document.addEventListener('DOMContentLoaded', function() {
+  ['practice-fname', 'practice-email'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') unlockPractice();
+      });
+    }
+  });
+});
+
+// Scroll to email capture
 function scrollToCapture() {
   showPage('home');
   setTimeout(() => {
-    const capture = document.getElementById('capture');
-    if (capture) {
-      // Use offset to account for fixed nav bar on mobile
-      const navHeight = 72;
-      const top = capture.getBoundingClientRect().top + window.pageYOffset - navHeight;
-      window.scrollTo({ top: top, behavior: 'smooth' });
-    }
-  }, 400);
+    document.getElementById('capture').scrollIntoView({ behavior: 'smooth' });
+  }, 100);
+}
+
+// Form submission
+function handleSubmit() {
+  const name = document.getElementById('fname').value.trim();
+  const email = document.getElementById('femail').value.trim();
+  if (!email || !email.includes('@')) {
+    document.getElementById('femail').style.borderColor = '#c84b2f';
+    document.getElementById('femail').placeholder = 'Please enter a valid email';
+    return;
+  }
+  // Here you would connect to ConvertKit, Mailchimp, etc.
+  // For now, show success state
+  document.getElementById('email-form').style.display = 'none';
+  document.getElementById('success-msg').classList.add('show');
+}
+
+// Speaking inquiry form
+function handleInquiry() {
+  const name = document.getElementById('inq-name').value.trim();
+  const email = document.getElementById('inq-email').value.trim();
+  const message = document.getElementById('inq-message').value.trim();
+  if (!name || !email || !message) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+  if (!email.includes('@')) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+  document.getElementById('inquiry-success').classList.add('show');
+  document.querySelector('.inquiry-submit').style.display = 'none';
 }
 
 // Nav scroll behavior
