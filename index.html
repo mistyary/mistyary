@@ -2461,6 +2461,9 @@ footer {
   <p class="practice-hero-sub">The clinical tools from each episode — written out, step by step, so you can use them between sessions. One episode at a time.</p>
 </div>
 
+<!-- Week 8 MailerLite note: source document specifies the “Practice Tab – Daily Reset Download” group.
+     The supplied HTML contains MailerLite account 2356403 but no embed/form/group identifier for that Practice group.
+     Do not invent an ID here; connect this gate to the group once its MailerLite embed/form code is available. -->
 <div class="practice-gate" id="practice-gate">
   <div class="practice-gate-card">
     <div class="practice-gate-icon">⟳</div>
@@ -2482,7 +2485,7 @@ footer {
   </div>
 
   <div class="practice-episodes">
-    <div class="practice-section-label">Season 1 · Episodes 1–7</div>
+    <div class="practice-section-label">Season 1 · Episodes 1–8</div>
 
     <div class="practice-ep" id="pep1">
       <div class="practice-ep-header" onclick="toggleEp('pep1')">
@@ -2745,9 +2748,35 @@ footer {
       </div>
     </div>
 
+
+    <div class="practice-ep" id="pep8">
+      <div class="practice-ep-header" onclick="toggleEp('pep8')">
+        <div class="practice-ep-num">EP 08</div>
+        <div class="practice-ep-title">"The Decision Trap"</div>
+        <div class="practice-ep-chevron">▼</div>
+      </div>
+      <div class="practice-ep-body">
+        <div class="practice-tool">
+          <div class="practice-tool-label">This Episode's Practice</div>
+          <div class="practice-tool-title">The Decision Trap</div>
+          <div class="practice-tool-body">When a decision won't resolve no matter how much you think about it, the fix usually isn't more analysis — it's a boundary. This practice session gives you two tools for getting unstuck: a way to close the deliberation, and a way to check whether the decision matters as much as it feels like it does right now.</div>
+          <div class="practice-steps">
+            <div class="practice-step"><div class="practice-step-num">1</div><div class="practice-step-text"><strong>Set a time boundary.</strong> Before you start deciding, decide how long the decision gets — thirty minutes, one night's sleep, until a specific day. When the boundary closes, you decide with what you know.</div></div>
+            <div class="practice-step"><div class="practice-step-num">2</div><div class="practice-step-text"><strong>Still stuck? Run the 10/10/10 check.</strong> How will you feel about this in ten minutes? Ten months? Ten years? It's calibration, not prediction.</div></div>
+            <div class="practice-step"><div class="practice-step-num">3</div><div class="practice-step-text"><strong>Let the decision stay decided.</strong> Once you've decided, catch any second-guessing, label it, and remind yourself: the decision was made with the information you had. Let it stay decided.</div></div>
+          </div>
+        </div>
+        <a href="https://youtube.com/@drmistyary" target="_blank" class="practice-watch-link">↗ Watch Episode 8 on YouTube</a>
+        <br>
+        <a href="#" class="practice-watch-link" onclick="showPage('home'); setTimeout(()=>scrollToCapture(),100); return false;">↗ Download the Free Daily Reset</a>
+        <br>
+        <a href="#" class="practice-watch-link" onclick="showPage('home'); setTimeout(()=>scrollToCapture(),100); return false;">↗ Join the Stop the Loop Launch List</a>
+      </div>
+    </div>
+
     <div style="text-align:center; padding: 40px 0 0; border-top: 1px solid var(--border); margin-top: 12px;">
       <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px;">New episodes added every Sunday</div>
-       <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:var(--near-black);">Episodes 8–14 coming weekly</div>
+       <div style="font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:var(--near-black);">Episodes 9–14 coming weekly</div>
       <div style="font-size:13px;color:var(--text-muted);margin-top:8px;line-height:1.7;">You'll receive an email each week when a new practice session is added. Check your inbox on Sundays.</div>
     </div>
   </div>
